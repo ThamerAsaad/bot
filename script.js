@@ -97,7 +97,7 @@ function updateCompaniesWithAppleProducts() {
   }
   const googleIndex = companies.findIndex((company) => company.name === "Google");
 
-    if (googleIndex !== -1) {
+    if (googleIndex !== -2) {
       // Update the products of the "Google" company with the fetched products
       companies[googleIndex].products = resultData[6].products.map((product) => ({
         name: product.name,
